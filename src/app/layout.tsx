@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-Br">
+    <html lang="pt-Br" className="bg-[var(--color-background)]">
       <body className={nunito.className}>{children}</body>
     </html>
   );

@@ -1,5 +1,15 @@
 @import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
-@import "tailwindcss/base";
+@tailwind utilities;
+
 
 @import "tailwindcss";
+
+
+:root {
+    --color-text: #ffffff;
+      --color-error: #980000;
+      --color-paper: #232323;
+      --color-primary: #009688;
+      --color-background: #000000;
+      --color-primary-contrast: #ffffff;
+  }
