@@ -1,12 +1,16 @@
+import { Metadata } from 'next';
 
 
+export const metadata: Metadata = {
+  title: "CodarSe - Todos os cursos"
+};
 
 export default function PageCursos() {
-    
-    return (
 
-        <main className="text-[var(--color-text)]">Cursos</main>
 
-    )
-
+  return (
+    <main>
+      Cursos
+    </main>
+  );
 }

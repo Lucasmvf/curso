@@ -1,13 +1,14 @@
-"use client";
+import { Metadata } from 'next';
 
-import React from 'react';
- 
+
+export const metadata: Metadata = {
+  title: "CodarSe - Página inicial"
+};
 
 export default function PageHome() {
   return (
-    <main className="text-[var(--color-text)]">
-      
+    <main>
+      Home
     </main>
-    
   );
 }
