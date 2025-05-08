@@ -5,7 +5,7 @@ import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md';
 import { Class } from './Class';
 
 
-interface IClassGroupProps {
+export interface IClassGroupProps {
   title: string;
   courseId: string;
   classes: {
@@ -26,7 +26,6 @@ export const ClassGroup = ({ classes, courseId, title }: IClassGroupProps) => {
         {open
           ? <MdKeyboardArrowDown size={24} />
           : <MdKeyboardArrowRight size={24} />
-          
         }
 
         {title}
