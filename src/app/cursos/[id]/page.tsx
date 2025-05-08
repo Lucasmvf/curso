@@ -21,7 +21,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function PageCourseDetail({ params }: Props) {
 
 
-
   return (
     <main className='mt-8 flex justify-center'>
       <div className='w-full min-[880px]:max-w-[880px] px-2 flex flex-col gap-4'>
@@ -29,12 +28,17 @@ export default function PageCourseDetail({ params }: Props) {
         <StartCourse
           idClass='1'
           idCourse='1'
+          title='🎩 Curso de Figma para DEVs'
           imageUrl='https://i.ytimg.com/vi/SVepTuBK4V0/hqdefault.jpg'
         />
 
-        <CourseHeader
-          
-        />
+        <CourseHeader/>
+        <CourseHeader/>
+        <CourseHeader/>
+        <CourseHeader/>
+        <CourseHeader/>
+        <CourseHeader/>
+        <CourseHeader/>
       </div>
     </main>
   );

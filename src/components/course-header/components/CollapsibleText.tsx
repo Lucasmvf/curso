@@ -14,6 +14,7 @@ export const CollapsibleText = ({ children, numberOfLinesWhenClosed }: ICollapsi
     <div className='flex flex-col items-end'>
       <p
         data-open={open}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         style={{ '--number-of-lines-when-closed': numberOfLinesWhenClosed } as any}
         className='data-[open=false]:line-clamp-[var(--number-of-lines-when-closed)]'
       >
