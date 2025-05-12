@@ -8,8 +8,8 @@ interface Props {
     courseId: string;
   }
 }
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default function PagePlayer({ params: { classId, courseId } }: Props) {
+
+export default function PagePlayer({ params: { } }: Props) {
 
 
   return (
