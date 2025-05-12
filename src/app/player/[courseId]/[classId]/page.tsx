@@ -1,19 +1,23 @@
+import { PlayerHeader } from '@/components/player/PlayerHeader';
 
 
-interface Props{
-    params: {
-        classId: string,
-        courseId: string
-    }
-
+interface Props {
+  params: {
+    classId: string;
+    courseId: string;
+  }
 }
+export default function PagePlayer({ params: { classId, courseId } }: Props) {
 
-export default function PagePlayer({ params: { courseId, classId } }: Props) {
 
-    return(
-        <>
-            Player {courseId} {classId}
-        </>
-    )
+  return (
+    <>
+      <PlayerHeader
+        title='API Rest, Node e Typescript: #00 - Apresentação do curso, tecnologias usadas e muito mais'
+        subtitle='🏆 Curso de API Rest, Node e Typescript'
+      />
 
+      Player {courseId} {classId}
+    </>
+  );
 }
