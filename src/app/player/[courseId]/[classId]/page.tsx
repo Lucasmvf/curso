@@ -1,5 +1,6 @@
-import { PlayerHeader, PlayerPlaylist, PlayerVideoPlayer } from '@/components/player';
+'use client';
 
+import { PlayerHeader, PlayerPlaylist, PlayerVideoPlayer } from '@/components/player';
 
 interface Props {
   params: {
@@ -405,6 +406,7 @@ export default function PagePlayer({ params: { classId, courseId } }: Props) {
         <div className="aspect-video">
           <PlayerVideoPlayer
             videoId='bP47qRVRqQs'
+            onPlayNext={() => console.log('play next') }
           />
           </div>
         </div>
