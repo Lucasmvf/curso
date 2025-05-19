@@ -1,22 +1,16 @@
-import { Comment } from './Comment';
+import { Comment, ICommentProps } from './Comment';
 
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface ICommentsProps {
-  //children: React.ReactNode;
+  comments: ICommentProps[];
 }
-export const Comments = ({ }: ICommentsProps) => {
+export const Comments = ({ comments }: ICommentsProps) => {
 
   return (
     <div className='flex gap-2 flex-col'>
-      <Comment />
-      <Comment />
-      <Comment />
-      <Comment />
-      <Comment />
-      <Comment />
-      <Comment />
-      <Comment />
+      {comments.map(comment => (
+        <Comment key={comment.publishDate} {...comment} />
+      ))}
     </div>
   );
 };
